@@ -1,4 +1,4 @@
-package com.company;
+package com.company.FirstTask;
 
 public class Person {
     String name;

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.FirstTask;
 
 import java.io.IOException;
 import java.lang.reflect.Array;

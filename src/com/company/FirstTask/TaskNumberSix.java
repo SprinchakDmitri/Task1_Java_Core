@@ -1,4 +1,5 @@
-package com.company;
+package com.company.FirstTask;
+
 
 public class TaskNumberSix {
 
@@ -34,6 +35,6 @@ public class TaskNumberSix {
 
         return  stringBuilder.toString() + "\n"+
                 Person.personArrayToString(personArray) +"\n" +
-                "Sum of all numbers:" + Double.toString(allNumbers);
+                "Sum of all numbers: " + allNumbers;
     }
 }
