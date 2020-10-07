@@ -2,19 +2,17 @@ package com.company;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class ReverseAndSortFunctions {
 
     public static void main(String[] args) {
         int [] array = {1,17,16,15,61,2,13,1,163,1346,2,62,6};
         int [] sortedArray;
+
         sortedArray = sort(array);
 
-        System.out.println("Sorted array: ");
-        for (int arrayElement: sortedArray)
-        {
-            System.out.print(arrayElement + " ");
-        }
+        System.out.println("Sorted array: " + Arrays.toString(sortedArray));
 
     }
 
