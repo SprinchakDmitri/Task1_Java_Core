@@ -12,7 +12,9 @@ public class ReverseAndSortFunctions {
 
         sortedArray = sort(array);
 
-        System.out.println("Sorted array: " + Arrays.toString(sortedArray));
+        System.out.println("Initial array: " + Arrays.toString(array));
+        System.out.println("Sorted array: "  + Arrays.toString(sortedArray));
+
 
     }
 
@@ -33,9 +35,10 @@ public class ReverseAndSortFunctions {
         return array;
         }
 
-        public static int[] sort(int[] array){                                  //sort method
+        public static int[] sort(int[] mainArray){                                  //sort method
         int k = 0;                        //reversing coefficient
         int minimum;
+        int [] array = mainArray.clone();
 
             for (int i = 0; i < array.length; i++) {
 
@@ -44,7 +47,6 @@ public class ReverseAndSortFunctions {
                 for (int p1 = i, p2 = 0; p1 < array.length; p1++,p2++) {     // fill the small array
                     resizeableArray[p2] = array[p1];
                 }
-
                     minimum = resizeableArray[0];
 
                 for (int j = 0; j < resizeableArray.length; j++) {
@@ -53,16 +55,13 @@ public class ReverseAndSortFunctions {
                         k = j;
                     }
                 }
-
                 reverseArrayOfIntsByIndex(resizeableArray, k + 1);  //reversing
 
                 for (int z = 0,  p = i; z < resizeableArray.length; z++,p++) {
                     array[p] = resizeableArray[z];
-                }
-
+                 }
                 }
                 return array;
-
         }
     }
 
